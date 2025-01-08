@@ -65,5 +65,3 @@ The application can be deployed to platforms such as Vercel or GitHub Pages. Ens
 
 Check out the live version here: (Coming soon..)
 ---
-
-Feel free to customize this template further based on additional project details!
