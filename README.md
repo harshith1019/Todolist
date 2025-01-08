@@ -63,8 +63,7 @@ The application can be deployed to platforms such as Vercel or GitHub Pages. Ens
 
 ## Live Demo
 
-Check out the live version here: [ToDoList Live Demo](https://harshith1019.github.io/Todolist)
-
+Check out the live version here: (Coming soon..)
 ---
 
 Feel free to customize this template further based on additional project details!
