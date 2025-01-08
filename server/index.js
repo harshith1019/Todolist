@@ -49,7 +49,7 @@ app.put("/todos/:id", async (req, res) => {
         const id = req.params.id;
         const {description} = req.body;
         const updateTodo = await pool.query("UPDATE todos SET description=$1 WHERE todo_id=$2 RETURNING *", [description, id]);
-        console.log(updateTodo.rows);
+        // console.log(updateTodo.rows);
         res.json(updateTodo.rows);
     } catch (error) {
         console.log(error.message);
@@ -62,20 +62,14 @@ app.delete("/todos/:id", async (req, res) => {
     try {
         const id = req.params.id;
         const deleteTodo = await pool.query("DELETE FROM todos WHERE todo_id=$1 RETURNING *", [id]);
-        console.log(deleteTodo.rows);
+        // console.log(deleteTodo.rows);
         res.json(deleteTodo.rows);
     } catch (error) {
         console.log(error.message);
     }
 })
 
-// app.get("/", (req, res) => {
-//     res.json({
-//         name: "harshith",
-//         email: "harshith.1019@gmail.com"
-//     })
-// })
-
+//Listen in Port 5000
 app.listen(5000, () => {
     console.log(`Server started on port 5000`);
 })
